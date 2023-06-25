@@ -4,7 +4,7 @@ import NameUser from "./components/NameUser";
 import ImgUser from "./components/ImgUser";
 import Biography from "./components/Biography";
 import CreateUser from "./components/CreateUser";
-import defaultImg from "../src/img/giovanniliotta.jpeg";
+import defaultImg from "../src/img/default-img.png";
 import ContactBtn from "./components/ContactBtn";
 import mail from "../src/img/mail.png";
 import linkedin from "../src/img/linkedin.png";
