@@ -1,6 +1,6 @@
-import { Dispatch, SetStateAction, ReactElement, ChangeEvent } from "react";
-import styled, { css } from "styled-components";
+import { ChangeEvent, Dispatch, ReactElement, SetStateAction } from "react";
 import { FaRegImage as IconFilee } from "react-icons/fa";
+import styled, { css } from "styled-components";
 
 const mediaQuery = css`
   @media (max-width: 768px) {
@@ -71,12 +71,11 @@ const ContainerFile = styled.div`
     align-items: center;
     border-radius: 1rem;
     text-transform: uppercase;
-    content: "Select Image";
+    content: "Buscar imagen";
     font-style: italic;
     color: #3e3e3e;
     font-weight: bold;
     position: absolute;
-    /* border: 2px solid black; */
     left: 0;
     right: 0;
     top: 0;
@@ -174,7 +173,7 @@ function CreateUser({
     <CreateUserContainer>
       <Form>
         <ContainerInput>
-          <Label htmlFor="image">Image</Label>
+          <Label htmlFor="image">Imagen</Label>
           <ContainerFile onClick={handleClickIconFile}>
             <FileInput
               onChange={handleChangeImg}
@@ -189,12 +188,12 @@ function CreateUser({
         </ContainerInput>
 
         <ContainerInput>
-          <Label htmlFor="name">Name</Label>
+          <Label htmlFor="name">Nombre</Label>
           <Input id="name" onChange={handleChangeName} type="text" />
         </ContainerInput>
 
         <ContainerInput>
-          <Label htmlFor="profession">Profession</Label>
+          <Label htmlFor="profession">Profesión</Label>
           <Input
             id="profession"
             onChange={handleChangeProfession}
@@ -203,18 +202,18 @@ function CreateUser({
         </ContainerInput>
 
         <ContainerInput>
-          <Label htmlFor="biography">Biography</Label>
+          <Label htmlFor="biography">Biografía</Label>
           <Input id="biography" onChange={handleChangeBiography} type="text" />
         </ContainerInput>
 
         <ContainerInput>
-          <Label>Contact</Label>
+          <Label>Contacto</Label>
           <ContainerContact>
             <ItemContact
               onChange={handleChangeLinkedIn}
               placeholder="LinkedIn"
             />
-            <ItemContact onChange={handleChangeEmail} placeholder="Mail" />
+            <ItemContact onChange={handleChangeEmail} placeholder="Email" />
           </ContainerContact>
         </ContainerInput>
       </Form>

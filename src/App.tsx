@@ -66,7 +66,7 @@ const ContactContainer = styled.div`
 
 const defaultProps = {
   defaultTextBiography:
-    "Inicié mi aprendizaje de forma autodidacta utilizando plataformas como Udemy, CoderHouse, entre otras. Creo sitios web responsive con experiencias de usuario atractivas y funcionales.  Trabajo con tecnologías como HTML, CSS, Bootstrap, Tailwind, JavaScript, React Js y GIT. Tengo 20 años de edad y vivo en Mendoza, Argentina.",
+    "Inicié mi aprendizaje de forma autodidacta utilizando plataformas como Udemy, Youtube entre otras. Creo sitios web responsive con experiencias de usuario atractivas y funcionales. Trabajo con tecnologías como HTML, CSS, Tailwind, JavaScript, TypeScript, React.js y Next.js. Tengo 21 años de edad y vivo en Argentina.",
 };
 
 const { defaultTextBiography } = defaultProps;
@@ -79,7 +79,7 @@ function App() {
   const [textBiographyUser, setTextBiographyUser] =
     useState<string>(defaultTextBiography);
   const [linkedinUser, setLinkedinUser] = useState<string>("Giovanni Liotta");
-  const [emailUser, setEmailUser] = useState<string>("gioliotta.io@gmail.com");
+  const [emailUser, setEmailUser] = useState<string>("gixi.tsx@gmail.com");
 
   return (
     <AppContainer>
